@@ -59,6 +59,11 @@ planilha['B12'] = 'R5 3600X'
 planilha['D12'] = 'R${}'.format(price_R53600X)
 planilha['C12'] = '{}'.format(date.today())
 
+
+planilha['A19'] = 'Intel:'
+planilha['B19'] = 'Nome:'
+planilha['C19'] = 'Data:'
+planilha['D19'] = 'Preço:'
 planilha['A20'] = 'CPU:'
 planilha['B20'] = 'i3 9100F'
 planilha['D20'] = 'R${}'.format(price_i39100F)
@@ -72,13 +77,41 @@ planilha['B22'] = 'i5 9600K'
 planilha['D22'] = 'R${}'.format(price_i59600K)
 planilha['C22'] = '{}'.format(date.today())
 planilha['A22'] = 'CPU:'
-planilha['B22'] = 'i7 9700F'
-planilha['D22'] = 'R${}'.format(price_i79700F)
+planilha['B22'] = 'i5 9600KF'
+planilha['D22'] = 'R${}'.format(price_i59600KF)
 planilha['C22'] = '{}'.format(date.today())
 planilha['A22'] = 'CPU:'
 planilha['B22'] = 'i7 9700K'
 planilha['D22'] = 'R${}'.format(price_i79700K)
 planilha['C22'] = '{}'.format(date.today())
+planilha['A23'] = 'CPU:'
+planilha['B23'] = 'i9 9900K'
+planilha['D23'] = 'R${}'.format(price_i99900K)
+planilha['C23'] = '{}'.format(date.today())
+planilha['A24'] = 'CPU:'
+planilha['B24'] = 'i3 10100'
+planilha['D24'] = 'R${}'.format(price_i310100)
+planilha['C24'] = '{}'.format(date.today())
+planilha['A25'] = 'CPU:'
+planilha['B25'] = 'i5 10400'
+planilha['D25'] = 'R${}'.format(price_i510400)
+planilha['C25'] = '{}'.format(date.today())
+planilha['A26'] = 'CPU:'
+planilha['B26'] = 'i5 10400F'
+planilha['D26'] = 'R${}'.format(price_i510400F)
+planilha['C26'] = '{}'.format(date.today())
+planilha['A27'] = 'CPU:'
+planilha['B27'] = 'i7 10700'
+planilha['D27'] = 'R${}'.format(price_i710700)
+planilha['C27'] = '{}'.format(date.today())
+planilha['A28'] = 'CPU:'
+planilha['B28'] = 'i7 10700K'
+planilha['D28'] = 'R${}'.format(price_i710700K)
+planilha['C28'] = '{}'.format(date.today())
+planilha['A29'] = 'CPU:'
+planilha['B29'] = 'i9 10900K'
+planilha['D29'] = 'R${}'.format(price_i910900K)
+planilha['C29'] = '{}'.format(date.today())
 excel.save('{}.xlsx'.format(date.today()))
 
 
