@@ -10,11 +10,11 @@ Observatory-Hardware
 version: 0.3.4 (alpha)
   
   AMD:
-      R5 1600AF
-      R3 2200G
-      R5 2600
-      R7 2700
-      R5 3600
+  R5 1600AF
+  R3 2200G
+  R5 2600
+  R7 2700
+  R5 3600
       R7 3700X
       R7 3800X
       R9 3900X
