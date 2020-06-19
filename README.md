@@ -1,5 +1,5 @@
 # Observatory-Hardware
-track hardware prices in Brazil with just a script.
+track hardware prices in Brazil.
 
 
 Observatory-Hardware
