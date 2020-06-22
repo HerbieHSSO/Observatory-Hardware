@@ -7,8 +7,8 @@ Observatory-Hardware
 
 
 
-version: 0.5.7 (alpha)
+version: 0.7.7 (alpha)
   
-News: GPU
+News: Status and Notifications
 
 author: HerbHSSO
