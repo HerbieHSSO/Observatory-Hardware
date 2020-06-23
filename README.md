@@ -7,7 +7,7 @@ Observatory-Hardware
 
 
 
-version: 0.7.7 (alpha)
+version: 0.7.3 (alpha)
   
 News: Status and Notifications
 
