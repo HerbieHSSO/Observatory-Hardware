@@ -35,7 +35,10 @@ try:
 except:
     status_kabum_GTX1650Super_XCBlackGaming = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - GTX 1650 Super XC Black Gaming', 'Kabum - EVGA')
-
+    oldPrice_kabum_GTX1650Super_XCBlackGaming = soup_kabum_GTX1650Super_XCBlackGaming.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_GTX1650Super_XCBlackGaming = soup_kabum_GTX1650Super_XCBlackGaming.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_GTX1650Super_XCBlackGaming)
+    print(newPrice_kabum_GTX1650Super_XCBlackGaming)
 
 try:
     kabum_GTX1660_GigabyteOC = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=101039'
@@ -61,7 +64,10 @@ try:
 except:
     status_kabum_GTX1660_GigabyteOC = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - GTX 1660 Gigabyte OC', 'Kabum - Gigabyte')
-
+    oldPrice_kabum_GTX1660_GigabyteOC = soup_kabum_GTX1660_GigabyteOC.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_GTX1660_GigabyteOC = soup_kabum_GTX1660_GigabyteOC.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_GTX1660_GigabyteOC)
+    print(newPrice_kabum_GTX1660_GigabyteOC)
 
 
 try:
@@ -88,7 +94,10 @@ try:
 except:
     status_kabum_GTX1660Super_GigabyteOC = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - GTX 1660 Super GigabyteOC', 'Kabum - Gigabyte')
-
+    oldPrice_kabum_GTX1660Super_GigabyteOC = soup_kabum_GTX1660Super_GigabyteOC.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_GTX1660Super_GigabyteOC = soup_kabum_GTX1660Super_GigabyteOC.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_GTX1660Super_GigabyteOC)
+    print(newPrice_kabum_GTX1660Super_GigabyteOC)
 
 
 try:
@@ -115,7 +124,10 @@ try:
 except:
     status_kabum_GTX1660Ti_GamingX = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - GTX 1660 Ti Gaming X' 'Kabum - Gigabyte')
-
+    oldPrice_kabum_GTX1660Ti_GamingX = soup_kabum_GTX1660Ti_GamingX.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_GTX1660Ti_GamingX = soup_kabum_GTX1660Ti_GamingX.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_GTX1660Ti_GamingX)
+    print(newPrice_kabum_GTX1660Ti_GamingX)
 try:
     kabum_RTX2060_Gaming = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=110397'
 except:
@@ -140,7 +152,10 @@ try:
 except:
     status_kabum_RTX2060_Gaming = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - RTX 2060 Gaming', 'Kabum - EVGA')
-
+    oldPrice_kabum_RTX2060_Gaming = soup_kabum_RTX2060_Gaming.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_RTX2060_Gaming = soup_kabum_RTX2060_Gaming.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_RTX2060_Gaming)
+    print(newPrice_kabum_RTX2060_Gaming)
 
 
 
@@ -169,7 +184,10 @@ try:
 except:
     status_kabum_RTX2060_GamingOCPro = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - RTX 2060 GamingOCPro', 'Kabum - Gigabyte')
-
+    oldPrice_kabum_RTX2060_GamingOCPro = soup_kabum_RTX2060_GamingOCPro.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_RTX2060_GamingOCPro = soup_kabum_RTX2060_GamingOCPro.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_RTX2060_GamingOCPro)
+    print(newPrice_kabum_RTX2060_GamingOCPro)
 
 
 try:
@@ -196,7 +214,10 @@ try:
 except:
     status_kabum_RTX2060Super_ROGStrix = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - RTX 2060 Super ROG Strix', 'Kabum - Gigabyte')
-
+    oldPrice_kabum_RTX2060Super_ROGStrix = soup_kabum_RTX2060Super_ROGStrix.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_RTX2060Super_ROGStrix = soup_kabum_RTX2060Super_ROGStrix.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_RTX2060Super_ROGStrix)
+    print(newPrice_kabum_RTX2060Super_ROGStrix)
 
 
 

@@ -29,7 +29,10 @@ try:
 except:
     status_kabum_i39100F = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i3 9100F', 'Kabum')
-
+    oldPrice_kabum_i39100F = soup_kabum_i39100F.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i39100F = soup_kabum_i39100F.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i39100F)
+    print(newPrice_kabum_i39100F)
 
 
 
@@ -56,7 +59,10 @@ try:
 except:
     status_kabum_i59400F = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i5 9400F', 'Kabum')
-
+    oldPrice_kabum_i59400F = soup_kabum_i59400F.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i59400F = soup_kabum_i59400F.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i59400F)
+    print(newPrice_kabum_i59400F)
 
 
 
@@ -88,6 +94,10 @@ try:
 except:
     status_kabum_i59600K = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i5 9600K', 'Kabum')
+    oldPrice_kabum_i59600K = soup_kabum_i59600K.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i59600K = soup_kabum_i59600K.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i59600K)
+    print(newPrice_kabum_i59600K)
 
 
 try:
@@ -116,7 +126,10 @@ try:
 except:
     status_kabum_i59600KF = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i5 9600KF', 'Kabum')
-
+    oldPrice_kabum_i59600KF = soup_kabum_i59600KF.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i59600KF = soup_kabum_i59600KF.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i59600KF)
+    print(newPrice_kabum_i59600KF)
 
     
 try:
@@ -143,7 +156,10 @@ try:
 except:
     status_kabum_i79700F = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i7 9700F', 'Kabum')
-
+    oldPrice_kabum_i79700F = soup_kabum_i79700F.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i79700F = soup_kabum_i79700F.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i79700F)
+    print(newPrice_kabum_i79700F)
 try:
     kabum_i79700K = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=98808'
 except:
@@ -167,7 +183,10 @@ try:
 except:
     status_kabum_i79700K = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i7 9700K', 'Kabum')
-
+    oldPrice_kabum_i79700K = soup_kabum_i79700K.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i79700K = soup_kabum_i79700K.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i79700K)
+    print(newPrice_kabum_i79700K)
 try:
     kabum_i79700KF = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=98808'
 except:
@@ -190,7 +209,10 @@ try:
 except:
     status_kabum_i79700KF = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i7 9700KF', 'Kabum')
-
+    oldPrice_kabum_i79700KF = soup_kabum_i79700KF.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i79700KF = soup_kabum_i79700KF.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i79700KF)
+    print(newPrice_kabum_i79700KF)
 
 try:
     
@@ -215,7 +237,10 @@ try:
 except:
     status_kabum_i99900K = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i9 9900K', 'Kabum')
-
+    oldPrice_kabum_i99900K = soup_kabum_i99900K.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i99900K = soup_kabum_i99900K.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i99900K)
+    print(newPrice_kabum_i99900K)
 
 try:
     kabum_i99900KF = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=102808'
@@ -237,11 +262,12 @@ try:
         status_kabum_i99900KF = soup_kabum_i99900KF.find(src="https://static.kabum.com.br/conteudo/temas/001/imagens/descricao/bot_disponibilidade_off.gif").get("alt")
         print(status_kabum_i99900KF)
 except:
-    status_kabum_i99900KF = print('PROMOÇÃO')
+    status_kabum_i99900KF = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i9 9900KF', 'Kabum')
-
-
-    
+    oldPrice_kabum_i99900KF = soup_kabum_i99900KF.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i99900KF = soup_kabum_i99900KF.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i99900KF)
+    print(newPrice_kabum_i99900KF)
 
 try:
     kabum_i310100 = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=112989'
@@ -266,7 +292,10 @@ try:
 except:
     status_kabum_i310100 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i3 10100', 'Kabum')
-
+    oldPrice_kabum_i310100 = soup_kabum_i310100.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i310100 = soup_kabum_i310100.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i310100)
+    print(newPrice_kabum_i310100)
 try:
     kabum_i510400 = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=112990'
 except:
@@ -292,7 +321,10 @@ try:
 except:
     status_kabum_i510400 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i5 10400', 'Kabum')
-
+    oldPrice_kabum_i510400 = soup_kabum_i510400.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i510400 = soup_kabum_i510400.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i510400)
+    print(newPrice_kabum_i510400)
 
 
 
@@ -325,7 +357,10 @@ try:
 except:
     status_kabum_i510400F = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i5 10400F', 'Kabum')
-
+    oldPrice_kabum_i510400F = soup_kabum_i510400F.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i510400F = soup_kabum_i510400F.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i510400F)
+    print(newPrice_kabum_i510400F)
 
 
 
@@ -354,7 +389,10 @@ try:
 except:
     status_kabum_i710700 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i7 10700', 'Kabum')
-
+    oldPrice_kabum_i710700 = soup_kabum_i710700.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i710700 = soup_kabum_i710700.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i710700)
+    print(newPrice_kabum_i710700)
 
 
     
@@ -383,7 +421,10 @@ try:
 except:
     status_kabum_i710700K = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i7 10700K', 'Kabum')
-
+    oldPrice_kabum_i710700K = soup_kabum_i710700K.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i710700K = soup_kabum_i710700K.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i710700K)
+    print(newPrice_kabum_i710700K)
 
 
     
@@ -413,6 +454,10 @@ try:
 except:
     status_kabum_i910900K = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - i9 10900K', 'Kabum')
+    oldPrice_kabum_i910900K = soup_kabum_i910900K.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_i910900K = soup_kabum_i910900K.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_i910900K)
+    print(newPrice_kabum_i910900K)
 
 
 

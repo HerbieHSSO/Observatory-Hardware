@@ -42,9 +42,47 @@ try:
 except:
     status_kabum_R51600AF = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R5 1600AF')
+    oldPrice_kabum_R51600AF = soup_kabum_R51600AF.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R51600AF = soup_kabum_R51600AF.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R51600AF)
+    print(newPrice_kabum_R51600AF)
+
+try:
+    
+
+    terabyte_R51600X = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=107545'
+
+except:
+    terabyte_R51600X = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=107545'
+page_terabyte_R51600X = requests.get(terabyte_R51600X, headers=headers)
+soup_terabyte_R51600X = BeautifulSoup(page_terabyte_R51600X.content,'html.parser')
 
 
+title_terabyte_R51600X = soup_terabyte_R51600X.find(itemprop='name').get_text()
+price_terabyte_R51600X = soup_terabyte_R51600X.find(itemprop='price').get('content')
 
+print(title_terabyte_R51600X)
+    
+print(price_terabyte_R51600X)
+
+
+try:
+    try:
+        status_kabum_R51600AF = soup_kabum_R51600AF.find(src="https://static.kabum.com.br/conteudo/temas/001/imagens/descricao/bot_disponibilidade_on.gif").get("alt")
+        print(status_kabum_R51600AF)
+    except:
+        status_kabum_R51600AF = soup_kabum_R51600AF.find(src="https://static.kabum.com.br/conteudo/temas/001/imagens/descricao/bot_disponibilidade_off.gif").get("alt")
+        print(status_kabum_R51600AF)
+
+
+except:
+    status_kabum_R51600AF = 'PROMOÇÃO'
+    toaster.show_toast('PROMOÇÃO - R5 1600AF')
+    oldPrice_kabum_R51600AF = soup_kabum_R51600AF.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R51600AF = soup_kabum_R51600AF.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R51600AF)
+    print(newPrice_kabum_R51600AF)
+    
 
 
 
@@ -76,9 +114,14 @@ except:
     
     status_kabum_R32200G = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R3 2200G')
+    oldPrice_kabum_R32200G = soup_kabum_R32200G.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R32200G = soup_kabum_R32200G.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R32200G)
+    print(newPrice_kabum_R32200G)   
+
+
+
     
-
-
 
 
 
@@ -109,6 +152,10 @@ except:
 
     status_kabum_R52600 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R5 2600', "TEST")
+    oldPrice_kabum_R52600 = soup_kabum_R52600.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R52600 = soup_kabum_R52600.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R52600)
+    print(newPrice_kabum_R52600)   
 
 
 
@@ -145,7 +192,10 @@ try:
 except:
     status_kabum_R53600 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R5 3600', "Kabum")
-
+    oldPrice_kabum_R53600 = soup_kabum_R53600.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R53600 = soup_kabum_R53600.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R53600)
+    print(newPrice_kabum_R53600)
 
 
 
@@ -182,7 +232,10 @@ try:
 except:
     status_kabum_R72700 = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R5 2700', "Kabum")
-
+    oldPrice_kabum_R72700 = soup_kabum_R72700.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R72700 = soup_kabum_R72700.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R72700)
+    print(newPrice_kabum_R72700)
 
 
 
@@ -215,7 +268,10 @@ try:
 except:
     status_kabum_R73700X = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R7 3700X', "Kabum")
-
+    oldPrice_kabum_R73700X = soup_kabum_R73700X.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R73700X = soup_kabum_R73700X.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R73700X)
+    print(newPrice_kabum_R73700X)
 
 
 
@@ -247,7 +303,10 @@ try:
 except:
     status_kabum_R73800X = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R7 3800X', "Kabum")
-
+    oldPrice_kabum_R73800X = soup_kabum_R73800X.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R73800X = soup_kabum_R73800X.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R73800X)
+    print(newPrice_kabum_R73800X)
 
 
 
@@ -279,7 +338,10 @@ try:
 except:
     status_kabum_R93900X = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R9 3900X', "Kabum")
-
+    oldPrice_kabum_R93900X = soup_kabum_R93900X.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R93900X = soup_kabum_R93900X.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R93900X)
+    print(newPrice_kabum_R93900X)
 
 
 
@@ -333,7 +395,10 @@ try:
 except:
     status_kabum_R33200G = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R3 3200G', "Kabum")
-
+    oldPrice_kabum_R33200G = soup_kabum_R33200G.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R33200G = soup_kabum_R33200G.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R33200G)
+    print(newPrice_kabum_R33200G)
 
 
 
@@ -362,7 +427,10 @@ try:
 except:
     status_kabum_R53600X = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - R5 3600X', "Kabum")
-
+    oldPrice_kabum_R53600X = soup_kabum_R53600X.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_R53600X = soup_kabum_R53600X.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_R53600X)
+    print(newPrice_kabum_R53600X)
 #GPUs:
 
 try:
@@ -390,7 +458,10 @@ try:
 except:
     status_kabum_Rx5704gb_PhantomGaming = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx5708gb Phantom Gaming', "Kabum")
-
+    oldPrice_kabum_Rx5704gb_PhantomGaming = soup_kabum_Rx5704gb_PhantomGaming.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5704gb_PhantomGaming = soup_kabum_Rx5704gb_PhantomGaming.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5704gb_PhantomGaming)
+    print(newPrice_kabum_Rx5704gb_PhantomGaming)
 try:
     kabum_Rx5708gb_PhantomGaming = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=102832'
 except:
@@ -417,7 +488,10 @@ try:
 except:
     status_kabum_Rx5708gb_PhantomGaming = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx5708gb Phantom Gaming', "Kabum")
- 
+    oldPrice_kabum_Rx5708gb_PhantomGaming = soup_kabum_Rx5708gb_PhantomGaming.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5708gb_PhantomGaming = soup_kabum_Rx5708gb_PhantomGaming.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5708gb_PhantomGaming)
+    print(newPrice_kabum_Rx5708gb_PhantomGaming) 
 
 
 
@@ -454,7 +528,10 @@ try:
 except:
     status_kabum_Rx5704gb_Gaming4G = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx5704gb Gaming4G', 'Kabum')
-    
+    oldPrice_kabum_Rx5704gb_Gaming4G = soup_kabum_Rx5704gb_Gaming4G.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5704gb_Gaming4G = soup_kabum_Rx5704gb_Gaming4G.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5704gb_Gaming4G)
+    print(newPrice_kabum_Rx5704gb_Gaming4G)     
 
 
 
@@ -491,7 +568,10 @@ try:
 except:
     status_kabum_Rx5708gb_Gaming8G = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx 5708gb Gaming8G', 'Kabum')
-    
+    oldPrice_kabum_Rx5708gb_Gaming8G = soup_kabum_Rx5708gb_Gaming8G.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5708gb_Gaming8G = soup_kabum_Rx5708gb_Gaming8G.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5708gb_Gaming8G)
+    print(newPrice_kabum_Rx5708gb_Gaming8G)    
 
 
 try:
@@ -520,7 +600,10 @@ try:
 except:
     status_kabum_Rx5704gb_XFXRSXXX = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx 5708gb XFX', 'Kabum')
-
+    oldPrice_kabum_Rx5704gb_XFXRSXXX = soup_kabum_Rx5704gb_XFXRSXXX.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5704gb_XFXRSXXX = soup_kabum_Rx5704gb_XFXRSXXX.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5704gb_XFXRSXXX)
+    print(newPrice_kabum_Rx5704gb_XFXRSXXX)
 
 
 try:
@@ -552,7 +635,10 @@ try:
 except:
     status_kabum_Rx590_Gaming8G = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx5908gb Gaming8G', 'Kabum')
-    
+    oldPrice_kabum_Rx590_Gaming8G = soup_kabum_Rx590_Gaming8G.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx590_Gaming8G = soup_kabum_Rx590_Gaming8G.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx590_Gaming8G)
+    print(newPrice_kabum_Rx590_Gaming8G)    
 
 
 
@@ -582,7 +668,10 @@ try:
 except:
     status_kabum_Rx5500XT4gb_GamingOC = 'PROMOÇÃO'
     toaster.show_toast('PROMOÇÃO - Rx5500XT4gb GamingOC', 'Kabum')
-    
+    oldPrice_kabum_Rx5500XT4gb_GamingOC = soup_kabum_Rx5500XT4gb_GamingOC.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5500XT4gb_GamingOC = soup_kabum_Rx5500XT4gb_GamingOC.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5500XT4gb_GamingOC)
+    print(newPrice_kabum_Rx5500XT4gb_GamingOC)     
 
 
 
@@ -620,41 +709,15 @@ try:
 except:
     status_kabum_Rx5500XT8gb_Pulse = print('PROMOÇÃO')
     toaster.show_toast('PROMOÇÃO - Rx5500XT8gb Pulse', 'Kabum')
+    oldPrice_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find('div', class_='preco_antigo-cm').get_text()
+    newPrice_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find('div', class_='preco_desconto-cm').find('strong').get_text()
+    print(oldPrice_kabum_Rx5500XT8gb_Pulse)
+    print(newPrice_kabum_Rx5500XT8gb_Pulse) 
 
 
 
 
 
-
-
-try:
-    kabum_Rx5500XT8gb_Pulse = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao.cgi?codigo=109852'
-
-except:
-    kabum_Rx5500XT8gb_Pulse = 'https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=109852'
-
-
-page_kabum_Rx5500XT8gb_Pulse = requests.get(kabum_Rx5500XT8gb_Pulse, headers=headers)
-soup_kabum_Rx5500XT8gb_Pulse = BeautifulSoup(page_kabum_Rx5500XT8gb_Pulse.content,'html.parser')
-
-title_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find(itemprop='name').get_text()
-price_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find(itemprop='price').get('content')
-
-print(title_kabum_Rx5500XT8gb_Pulse)
-print(price_kabum_Rx5500XT8gb_Pulse)
-
-
-
-try:
-    try:
-        status_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find(src="https://static.kabum.com.br/conteudo/temas/001/imagens/descricao/bot_disponibilidade_on.gif").get("alt")
-        print(status_kabum_Rx5500XT8gb_Pulse)
-    except:
-        status_kabum_Rx5500XT8gb_Pulse = soup_kabum_Rx5500XT8gb_Pulse.find(src="https://static.kabum.com.br/conteudo/temas/001/imagens/descricao/bot_disponibilidade_off.gif").get("alt")
-        print(status_kabum_Rx5500XT8gb_Pulse)
-except:
-    status_kabum_Rx5500XT8gb_Pulse = 'PROMOÇÃO'
-    toaster.show_toast('PROMOÇÃO - Rx5500XT8gb Pulse', 'Kabum')
 
 
 
