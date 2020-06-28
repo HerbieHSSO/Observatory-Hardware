@@ -20,8 +20,8 @@ from nvidea import *
 
 
 
-auth = tweepy.OAuthHandler('vw9DkYbv3FUmczg4RYkQK7VvZ', 'mfD3WI5VCU9cGMwPqZN8hvLbzt9RiUhKAjcGvST9DZ3jaCzbZ4')
-auth.set_access_token('1067553387691020288-Pb3srorawe6VPYNFTtOMkn7FKevGwG','mKQvRuS5ykBhskVlNXlWQ3pZciyMPv0guCfTMBTK1Dws3')
+auth = tweepy.OAuthHandler('') # your twitter auth
+auth.set_access_token('')# your twitter token
 
 
 api = tweepy.API(auth)
