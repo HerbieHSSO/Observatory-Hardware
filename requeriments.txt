@@ -1,0 +1,4 @@
+bs4==0.0.1
+python-time=0.1.2
+threaded==4.0.8
+tweepy==3.8.0
