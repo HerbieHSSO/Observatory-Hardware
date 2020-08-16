@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import smtplib
 from threading import Thread
-from multiprocessing import Process
 from time import sleep
 import time
 import tweepy
