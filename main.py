@@ -1,15 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import smtplib
-import openpyxl
 from threading import Thread
 from multiprocessing import Process
 from time import sleep
 import time
-from openpyxl import Workbook
-from openpyxl import styles
-from datetime import date
-from win10toast import ToastNotifier
 import tweepy
 
 
