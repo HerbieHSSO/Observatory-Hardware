@@ -7,8 +7,8 @@ Observatory-Hardware
 
 
 
-version: 0.7.3 (alpha)
+version: 5.7.8
   
-News: Status and Notifications
+News: Terabyte
 
 author: HerbHSSO
