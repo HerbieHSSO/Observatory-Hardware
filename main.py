@@ -19,8 +19,8 @@ headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 
 
-auth = tweepy.OAuthHandler('B4crkoej1UCWysTkTUTg9sDep', 'R0ROCnKEtJM0THMZ44PHQWEwYmKC0jXjJCZpreBc3qIYtrAZrO')
-auth.set_access_token('846334865226248192-LjnuWowOL9OVokcsI22rcHwBGC8STuZ','73eKPiyXB4AhF6WUhd67PAI00J6xVPp49a4LnLdP8lBjl')
+auth = tweepy.OAuthHandler('', '')
+auth.set_access_token('')
 
 
 api = tweepy.API(auth)
